@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-family: 'Alkatra', cursive;
+    font-size: 2rem;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+#hamburguer .linha{
+  height: .5rem;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 .2rem .2rem #000;
+}
+body{
+    background-image: url('./images/cine.jpg');
+    background-size: cover;
+    
+    
+}
+  
+#home{
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  #home .linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 .2rem .2rem #000;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 20rem;
+    z-index: 10;
+    right: -20rem;
+    transition: right .5s;
+  }
+  
+  .menu-show{
+    right: 0;
+  }
+  
+  nav li{
+    list-style: none;
+  }
+  
+  nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black
+  }
+  
+  nav a:hover{
+    color: slateblue;
+  } 
+  
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px;
+}
+
+img{
+    height: 239px;
+    width: 161px;
+    cursor: pointer;
+}
+
+  
+.img-zoom img{
+    transition: all 1s;
+    max-width: 100%;
+}
+  
+.img-zoom:hover img{
+    transform: scale(1.5);
+}
